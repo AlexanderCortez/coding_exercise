@@ -12,7 +12,7 @@ describe('People', () => {
     );
   });
 
-  it('should should only active records', () => {
+  it('should return only active records', () => {
     const people = getPeople();
     expect(people[0]).toHaveProperty('Name', 'Matt')
     expect(people[1]).toHaveProperty('Name', 'Miroslav')
